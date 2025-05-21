@@ -9,11 +9,15 @@
 </head>
 <body style="margin: 0; overflow: hidden;">
     <a-scene embedded arjs>
-        <a-marker-camera preset="hiro"></a-marker-camera>
-        <a-box position="0 0.5 0" material="color: yellow;"></a-box>
-        <a-box position="0 1.5 0" depth="0.5" height="0.5" width="0.5" material="color: lightblue;"></a-box>
-        <!--<a-entity camera></a-entity>-->
-        <a-entity gltf-model="url(https://cdn.aframe.io/test-models/models/gltf/DamagedHelmet/glTF/DamagedHelmet.gltf)" position="0 2.5 0" scale="0.5 0.5 0.5"></a-entity>
+        <!-- Menggunakan a-marker sehingga objek berada relatif terhadap marker -->
+        <a-marker preset="hiro">
+            <!-- Objek sphere biru, posisinya (0,0.5,0) relatif ke pusat marker -->
+            <a-sphere position="0 0.5 0" radius="0.5" material="color: blue;"></a-sphere>
+            <!-- Objek box biru muda di atas sphere dengan posisi (0,1.5,0) -->
+            <a-box position="0 1.5 0" depth="0.5" height="0.5" width="0.5" material="color: lightblue;"></a-box>
+        </a-marker>
+        <!-- Entity kamera untuk menampilkan AR -->
+        <a-entity camera></a-entity>
     </a-scene>
 </body>
 </html>
