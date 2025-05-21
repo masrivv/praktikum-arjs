@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Praktikum AR.js</title>
+    <title>Rivale Belano-Praktikum AR.js</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/ar.js@3.3.2/aframe/build/aframe-ar.min.js"></script>
     <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
@@ -12,9 +12,9 @@
         <!-- Menggunakan a-marker sehingga objek berada relatif terhadap marker -->
         <a-marker preset="hiro">
             <!-- Objek sphere biru, posisinya (0,0.5,0) relatif ke pusat marker -->
-            <a-box position="0 0.5 0" radius="0.5" material="color: blue;"></a-box>
+            <a-box position="0 0.5 0" radius="0.5" material="color: yellow;"></a-box>
             <!-- Objek box biru muda di atas sphere dengan posisi (0,1.5,0) -->
-            <a-sphere position="0 1.5 0" depth="0.5" height="0.5" width="0.5" material="color: lightblue;"></a-sphere>
+            <a-cone position="0 1.5 0" depth="0.5" height="0.5" width="0.5" material="color: lightblue;"></a-cone>
         </a-marker>
         <!-- Entity kamera untuk menampilkan AR -->
         <a-entity camera></a-entity>
