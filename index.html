@@ -11,10 +11,10 @@
     <a-scene embedded arjs>
         <!-- Menggunakan a-marker sehingga objek berada relatif terhadap marker -->
         <a-marker preset="hiro">
-            <!-- Objek sphere biru, posisinya (0,0.5,0) relatif ke pusat marker -->
+            <!-- Objek box kuning, posisinya (0,0.5,0) relatif ke pusat marker -->
             <a-box position="0 0.5 0" radius="0.5" material="color: yellow;"></a-box>
-            <!-- Objek box biru muda di atas sphere dengan posisi (0,1.5,0) -->
-            <a-cone position="0 1.5 0" depth="0.5" height="0.5" width="0.5" material="color: lightblue;"></a-cone>
+            <!-- Objek box biru muda di atas box kuning dengan posisi (0,1.5,0) -->
+            <a-box position="0 1.5 0" depth="0.5" height="0.5" width="0.5" material="color: lightblue;"></a-box>
         </a-marker>
         <!-- Entity kamera untuk menampilkan AR -->
         <a-entity camera></a-entity>
